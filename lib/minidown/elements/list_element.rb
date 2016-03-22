@@ -1,8 +1,8 @@
 module Minidown
   class ListElement < Element
     attr_accessor :p_tag_content, :contents, :task_list, :checked
-    CheckedBox = '<input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">'.freeze
-    UnCheckedBox = '<input type="checkbox" class="task-list-item-checkbox" disabled="">'.freeze
+    CheckedBox = '<input type="checkbox" class="task-list-item-checkbox" checked="">'.freeze
+    UnCheckedBox = '<input type="checkbox" class="task-list-item-checkbox">'.freeze
 
     def initialize *_
       super
